@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.Student" table="masterstudentlist">
+	
+	<id name="id" type="int" column="id">
+		</id>
+
+		<property name="adm_no" type="int" column="Adm_no"/>
+		<property name="stu_name" type="string" column="stu_name" />
+		<property name="class_id" type="int" column="class_id" />
+		
+				
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.Subject" table="subject">
+		
+		<id name="subject" type="string" column="subject" >	
+		<generator class="native" />
+		</id>
+		<property name="id" type="int" column="id"/>
+		<property name="class_id" type="int" column="class_id"/>
+		
+		<many-to-one name="teacher" cascade="all" class="com.Teacher" column="subject" unique="true" not-null="true" insert="false" update="false"/>
+		
+	</class>
+	
+
+</hibernate-mapping>
